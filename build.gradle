@@ -1,0 +1,23 @@
+group 'de.jonashavers'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 10
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.1.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.1'
+}
+
+test {
+    useJUnitPlatform()
+    failFast = true
+    testLogging {
+        events 'PASSED', 'FAILED'
+    }
+}
