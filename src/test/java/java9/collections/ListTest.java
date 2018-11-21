@@ -35,7 +35,7 @@ class ListTest {
             // when
             List list = List.of();
             // then
-            assertEquals("java.util.ImmutableCollections$List0", list.getClass().getName());
+            assertEquals("java.util.ImmutableCollections$ListN", list.getClass().getName());
         }
 
         @Test
@@ -43,7 +43,7 @@ class ListTest {
             // when
             List<String> list = List.of("Value1");
             // then
-            assertEquals("java.util.ImmutableCollections$List1", list.getClass().getName());
+            assertEquals("java.util.ImmutableCollections$List12", list.getClass().getName());
         }
 
         @Test
@@ -54,7 +54,7 @@ class ListTest {
                     "Value2"
             );
             // then
-            assertEquals("java.util.ImmutableCollections$List2", list.getClass().getName());
+            assertEquals("java.util.ImmutableCollections$List12", list.getClass().getName());
         }
 
         @Test

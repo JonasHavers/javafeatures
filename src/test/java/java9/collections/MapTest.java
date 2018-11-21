@@ -29,7 +29,7 @@ class MapTest {
             // when
             Map map = Map.of();
             // then
-            assertEquals("java.util.ImmutableCollections$Map0", map.getClass().getName());
+            assertEquals("java.util.ImmutableCollections$MapN", map.getClass().getName());
         }
 
         @Test

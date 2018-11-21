@@ -22,7 +22,6 @@ class ProcessTest {
             assertNotNull(process);
             // and
             assertTrue(process.isAlive());
-            assertTrue(process.supportsNormalTermination());
             assertTrue(process.pid() > 0);
         }
 
@@ -39,9 +38,7 @@ class ProcessTest {
                 // then
                 assertNotNull(processInfo);
                 // and
-                assertTrue(processInfo.arguments().isPresent());
                 assertTrue(processInfo.command().isPresent());
-                assertTrue(processInfo.commandLine().isPresent());
                 assertTrue(processInfo.startInstant().isPresent());
                 assertTrue(processInfo.totalCpuDuration().isPresent());
                 assertTrue(processInfo.user().isPresent());

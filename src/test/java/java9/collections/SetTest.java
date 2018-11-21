@@ -35,7 +35,7 @@ class SetTest {
             // when
             Set set = Set.of();
             // then
-            assertEquals("java.util.ImmutableCollections$Set0", set.getClass().getName());
+            assertEquals("java.util.ImmutableCollections$SetN", set.getClass().getName());
         }
 
         @Test
@@ -43,7 +43,7 @@ class SetTest {
             // when
             Set<String> set = Set.of("Value1");
             // then
-            assertEquals("java.util.ImmutableCollections$Set1", set.getClass().getName());
+            assertEquals("java.util.ImmutableCollections$Set12", set.getClass().getName());
         }
 
         @Test
@@ -54,7 +54,7 @@ class SetTest {
                     "Value2"
             );
             // then
-            assertEquals("java.util.ImmutableCollections$Set2", set.getClass().getName());
+            assertEquals("java.util.ImmutableCollections$Set12", set.getClass().getName());
         }
 
         @Test

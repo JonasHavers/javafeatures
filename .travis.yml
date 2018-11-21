@@ -10,10 +10,10 @@ before_install:
 matrix:
   include:
 # Java 10 "Oracle JDK" (not yet provided by Travis CI)
-    - env: JDK='Oracle JDK 10'
+    - env: JDK='Oracle JDK 11'
       install: . ./install-jdk.sh -F 10 -L BCL
 # Java 10 "OpenJDK"
-    - env: JDK='OpenJDK 10'
+    - env: JDK='OpenJDK 11'
       install: . ./install-jdk.sh -F 10 -L GPL
 
 script:
