@@ -3,18 +3,9 @@ language: java
 dist: trusty
 sudo: false
 
-# Get latest install-jdk.sh script
-before_install:
-  - wget https://github.com/sormuras/bach/raw/master/install-jdk.sh
-
-matrix:
-  include:
-# Java 10 "Oracle JDK" (not yet provided by Travis CI)
-    - env: JDK='Oracle JDK 11'
-      install: . ./install-jdk.sh -F 10 -L BCL
-# Java 10 "OpenJDK"
-    - env: JDK='OpenJDK 11'
-      install: . ./install-jdk.sh -F 10 -L GPL
+jdk:
+- oraclejdk11
+- openjdk11
 
 script:
 # Display Gradle, Groovy, JVM and other versions

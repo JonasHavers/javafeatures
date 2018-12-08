@@ -8,8 +8,8 @@ As usual, the tests are in `src/test/java`.
 
 The project is based on:
 
-* Gradle 4.6 (wrapper)
-* JDK 10
+* Gradle 4.10.2 (wrapper)
+* JDK 11
 * JUnit 5.1
 
 Run the tests with:

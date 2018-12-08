@@ -1,2 +1,4 @@
 rootProject.name = 'javafeatures'
+include 'jdk9'
+include 'jdk10'
 
