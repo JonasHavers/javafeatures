@@ -2,6 +2,10 @@
 /build/
 .idea
 /out/
+jdk10/build
+jdk10/out
+jdk9/build
+jdk9/out
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar

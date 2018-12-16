@@ -23,7 +23,7 @@ class VarTest {
         // when
         var list = List.of("Value1", "Value2");
         // then
-        assertEquals("java.util.ImmutableCollections$List2", list.getClass().getName());
+        assertEquals("java.util.ImmutableCollections$List12", list.getClass().getName());
         // and
         String firstItem = list.get(0);
         assertEquals("Value1", firstItem);
